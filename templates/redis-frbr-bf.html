@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block header %}
+    {{ header.generate(2) }}
+{% endblock %}
+
+{% block main %}
+<section class="row">
+    <article class="col-md-4 col-sm-4 ">
+        <h2>Redis</h2>
+    </article>
+    <article class="col-md-4 col-sm-4">
+        <h2>FRBR</h2>
+
+    </article>
+    <article class="col-md-4 col-sm-4">
+        <h2>BIBFRAME</h2>
+
+    </article>
+</section>
+{% endblock %}

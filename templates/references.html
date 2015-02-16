@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block header %}
+    {{ header.generate(0) }}
+{% endblock %}
+
+{% block main %}
+{# START Main row #}
+<section class="row">
+    {# START content #}
+    <div class="col-md-8 well well-sm">
+        <h1>Webinar References</h1> 
+        <ul class="media-list">
+            <li class="media">
+                <div class="media-left">
+                    <a href="http://discovery.coloradocollege.edu/code4lib/">
+                        <img class="media-object" src="{{ url_for('static', filename='images/code4lib-2012.jpg') }}" alt="Code4Lib 2012">
+                    </a>
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">Code4Lib 2012</h4>
+
+                </div>
+            </li>
+        </ul>
+    {# END content #}
+    </div>
+{# END Main row #}
+</section> 
+{% endblock %}

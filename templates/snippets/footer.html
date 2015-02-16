@@ -1,0 +1,33 @@
+<footer class="btn-group">
+    <a type="button" class="btn btn-primary" href="{{ url_for('index') }}" title="Webinar Home">
+     <i class="glyphicon glyphicon-home"></i>
+    </a>
+    <a type="button" class="btn btn-primary" href="#about-webinar" data-toggle="modal" title="About this Webinar">
+     <i class="glyphicon glyphicon-info-sign"></i>
+    </a>
+    <a type="button" class="btn btn-primary" href="{{ url_for('slide', page='references') }}" data-toggle="modal" title="Webinar References">
+     <i class="glyphicon glyphicon-book"></i>
+    </a>
+
+</footer>
+<div class="modal fade" id="about-webinar">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">About the Presenter and this Webinar</h4>
+      </div>
+      <div class="modal-body">
+        <p>Jeremy Nelson is the Metadata and Systems Librarian at <a href="https://www.coloradocollege.edu/">Colorado College</a>,
+        a four-year private liberal arts college in Colorado Springs. Prior to becoming a librarian, Nelson worked as programmer and
+        project manager at various software companies and financial services institutions. His undergraduate degree is from 
+        <a href="http://www.knox.edu">Knox College</a> and his Master of Science in Library and Information Science from the 
+        <a href="http://www.lis.uiuc.edu">University of Illinois Urbana-Champaign</a>. 
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
