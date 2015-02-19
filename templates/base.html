@@ -19,13 +19,40 @@
   </head>
   <body class="container">
   {% import 'snippets/header.html' as header %} 
+  {% import 'snippets/slide-header.html' as slide_nav %}
    {% block header %}
         {{ header.generate(0) }}
    {% endblock %}
    {% block main %}
     <article class="jumbotron">
        <h1>{{ title }}</h1>
-       <p class="lead">This is the lead</p>
+       <p class="lead">This webinar traces the development path taken by the 
+        <a href="https://www.coloradocollege.edu/library">Tutt Library</a>
+        at <a href="https://www.coloradocollege.edu/">Colorado College</a> as its explores 
+        how <a href="{{ url_for('slide', page='references') }}#bibframe">BIBFRAME</a> and other 
+        <a href="{{ url_for('slide', page='references') }}#schema-org">Linked</a>-<a href="{{ url_for('slide', page='references') }}#modsrdf">data</a>
+        vocabularies
+        can be used in library systems to improve operations and provide superior access
+        and discoverability of the library's collections.
+       </p>
+       <p class="lead">Starting with early experiments 
+        modeling bibliographic entities using <a href="https://cloud.google.com/appengine/">Google App Engine</a>
+        &amp; <a href="{{ url_for('slide', page='references') }}#solr">Solr</a>, the library moved to 
+        using <a href="{{ url_for('slide', page='references') }}#redis">Redis</a> as a bibliographic store for 
+        <a href="{{ url_for('slide', page='references') }}#frbr">FRBR</a> and BIBFRAME entities. Limitations with Redis
+        lead to further experimental systems with <a href="{{ url_for('slide', page='references') }}#mongodb">MongoDB</a> 
+        and Solr, leading eventually to using
+        <a href="{{ url_for('slide', page='references') }}#fedora4">Fedora 4</a> as a 
+        <a href="{{ url_for('slide', page='references') }}#linked-data-platform">Linked Data Platform</a>
+        supported by <a href="{{ url_for('slide', page='references') }}#elastic-search">Elastic Search</a>, 
+        <a href="{{ url_for('slide', page='references') }}#fuseki">Apache Fuseki</a>, and Redis that is
+        being actively developed in the upcoming BIBFRAME Catalog for the Library of Congress. 
+        The future plans for the Tutt Library is to use the BIBFRAME Catalog a foundation for a new
+        integrated library catalog and website. 
+      </p>
+      <a href="{{ url_for('slide', page='early-experiments') }}" class="pull-right btn btn-lg btn-info">
+         Early experiments <i class="glyphicon glyphicon-triangle-right"></i>
+      </a>
     </article>
    {% endblock %}
    {% block footer %}

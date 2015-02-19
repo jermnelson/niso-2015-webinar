@@ -1,0 +1,25 @@
+{% macro generate(previous, next, title) -%}
+<div class="row">
+  {% if previous %}
+  <nav class="col-md-4">
+    <a class="btn btn-warning pull-left" href="{{ url_for('slide', page=previous.page) }}">
+      <i class="glyphicon glyphicon-triangle-left"></i>
+      {{ previous.name }}
+    </a>
+  </nav>
+  {% endif %}
+  {% if title %}
+  <section class="col-md-4 {% if not previous %}col-md-offset-4{% endif %}">
+    <h2 class="center-block">{{ title }}</h2>
+  </section>
+  {% endif %}
+  {% if next %}
+  <nav class="col-md-4">
+    <a class="btn btn-success pull-right" href="{{ url_for('slide', page=next.page) }}">
+     {{ next.name }}
+     <i class="glyphicon glyphicon-triangle-right"></i>      
+    </a>
+  </nav>
+  {% endif %}
+</div>
+{%- endmacro %}
