@@ -6,6 +6,77 @@
 
 {% block main %}
 {{ slide_nav.generate(None, {'name': 'Redis, FRBR, & BIBFRAME', 'page': 'redis-frbr-bf'}, 'Early Experiments') }}
+<div class="row">
+  <article class="col-md-8">
+   <p class="lead">Jeremy Nelson's early experiments with using NoSQL and 
+    other technologies for bibliographic began in 2007 when he was employed as the 
+    Electronics Resources and Government Documents Librarian at Western State 
+    College (now <a href="http://www.western.edu/">Western State Colorado University</a>)
+    in Gunnison Colorado.</p> 
+   <h2><a name="gae"></a> Google App Engine</h2>
+   <img src="{{ url_for('static', filename='images/gae-legacy-logo.png') }}" alt="GAE Legacy Logo" class="pull-right">
+   <p>In 2008, <a href="http://www.google.com/">Google</a> announced a new cloud 
+   PAAS (Platform-as-a-Service development environment they called 
+   <a href="https://cloud.google.com/appengine/">Google App Engine (GAE)</a>. This preview
+   offered a Python-based application SDK loosely based on <a href="https://www.djangoproject.com/">Django</a>
+   that ran on Google's cloud and access to Google Data storage technologies through the 
+   underlying GAE APIs. 
+   </p>
+   <p>
+   To explore this new environment, Nelson created three GAE applications, a GovDocs Manager for handling the shipping
+   lists in the material processing workflow of Federal and Colorado State documents, an application for 
+   tracking recording usage for print magazines and scholarly journals, and finally a "eLibrary" that presented a display 
+   of electronic resources organized by title, subject, and popularity.
+   </p>
+   <p>
+   Before GovDocsManager and Serials Management GAE applications,
+   accomplished these tasks involved complicated manual workflows using both paper tracking marks and fragile Microsoft Access
+   databases that provenance was lost. 
+   </p>
+  </article>
+  <nav class="col-md-4">
+    <ul>
+      <li><a href="#intro">Intro</a></li>
+      <li><a href="#govdocsmanger">WSC's GovDocs Manager</a></li>
+      <li><a href="#serialmanager">WSC's Serials Management</a></li>
+      <li><a href="#elibrary">WSC's eLibrary</a></li>
+    </ul>
+  </nav>
+</div>
+<hr>
+<h2><a name="govdocsmanager"></a>GovDocs Manager</h2> 
+  <div class="row">
+    <section class="col-md-5">
+     <img src="{{ url_for('static', filename='images/govdocsmanager.png') }}" alt='Screenshot of GovDocsManager Google App'>
+    </section>
+    <article class="col-md-6">
+      <p>The GovDocs Manager</p>
+    </article>
+   </div>
+<hr>
+<h2><a name="serialsmanager"></a> Serials Management</h2>
+   <div class="row">
+     <article class="col-md-4">
+      <p>The serials management GAE application</p>
+     </article>
+     <section class="col-md-8">
+       <img src="{{ url_for('static', filename='images/serials-management.png') }}" alt='Screenshot of GovDocsManager Google App'>
+
+     </section>
+   </div>
+<hr>
+<h2><a name="elibrary"></a>WSC's eLibrary</h2>
+<div class="row">
+     <article class="col-md-3">
+       <p>The eLibrary project at WSC was the cumulation of the experiences developing 
+
+     </article>
+     <section class="col-md-9">
+        <img src="{{ url_for('static', filename='images/elibrary-wsc-gae.png') }}">
+   
+     </section>
+</div>
+<hr>
 {% endblock %}
 
 
