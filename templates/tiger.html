@@ -5,5 +5,45 @@
 {% endblock %}
 
 {% block main %}
-{{ slide_nav.generate({'name': 'Redis, FRBR, & BIBFRAME', 'page': 'redis-frbr-bf'}, {'name': 'BIBFRAME Catalog', 'page': 'bf-catalog'}, 'TIGER Catalog') }}
+{{ slide_nav.generate({'name': 'Redis, FRBR, & BIBFRAME', 'page': 'redis-frbr-bf'}, {'name': 'BIBFRAME Catalog', 'page': 'bf-catalog'}, 'Path to TIGER Catalog') }}
+<div class="row">
+   <article class="col-md-7">
+     <h2>Aristotle Discovery Layer<br><small>2012-2014</small></h2>
+   </article>
+   <section class="col-md-5">
+     <h3>Timeline</h3>
+     <dl class="dl-horizontal">
+       <dt>2012-2014</dt>
+       <dd>Aristotle Discovery Layer</dd>
+       <dt>2013-2015</dt>
+       <dd>Aristotle Library Apps</dd>
+       <dt>2013</dt>
+       <dd>Prospector Discovery App</dd>
+       <dt>2014</dt>
+       <dd>TIGER Catalog (1st iteration)</dd>
+       <dt>2015-</dt>
+       <dd>TIGER Catalog (2nd iteration)</dd>
+     </dl>
+   </section> 
+</div>
+<div class="row">
+  <article class="col-md-6">
+   <h2>Aristotle Layer Apps<br><small>2012-2014</small></h2>
+  </article>
+  <article class="col-md-6">
+   <h2>Prospector Discovery App<br><small>2013</small></h2>
+  </article>
+</div>
+<div class="row">
+  <article class="col-md-8 col-md-offset-4">
+    <h2>TIGER Catalog (1st iteration)<br><small>2014</small></h2>
+  </article>
+</div>
+<div class="row">
+  <article class="col-md-8">
+    <h2>TIGER Catalog (2nd iteration)
+     <br><small>2015-</small>
+    </h2>
+  </article>
+</div>
 {% endblock %}
