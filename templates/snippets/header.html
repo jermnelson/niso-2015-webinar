@@ -14,12 +14,12 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li {% if page == 1 %}class="active"{% endif %}>
-          <a href="{{ url_for('slide', page='early-experiments') }}">Early experiments 
+          <a href="{{ url_for('slide', page='early-experiments') }}">Early experiments<br>2007-2010
            {% if page == 1 %}<span class="sr-only">(current)</span>{% endif %}
           </a>
         </li>
         <li {% if page == 2 %}class="active"{% endif %}>
-           <a href="{{ url_for('slide', page='redis-frbr-bf') }}">Redis, FRBR, &amp; BIBFRAME
+           <a href="{{ url_for('slide', page='redis-frbr-bf') }}">Redis, FRBR, &amp; BIBFRAME<br>2011-2013
            {% if page == 2 %}<span class="sr-only">(current)</span>{% endif %}
            </a>
         </li>
@@ -29,7 +29,7 @@
            </a>
         </li>
         <li {% if page == 3 %}class="active"{% endif %}>
-            <a href="{{ url_for('slide', page='tiger') }}">TIGER Catalog
+            <a href="{{ url_for('slide', page='tiger') }}">TIGER Catalog<br>2012-2014
 	    {% if page == 3 %}<span class="sr-only">(current)</span>{% endif %}
             </a>
         </li>

@@ -12,8 +12,29 @@
 
   </section>
   <section class="col-md-4 col-sm-3">
+    <article class="alert alert-info alert-dismissible" role="alert">
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <strong>BIBCAT</strong>
+      <p>
+        <a href="http://bibcat.org" class="alert-link">BIBCAT</a>, 
+        the BIBFRAME Catalog,
+        is a <a class="alert-link" href="#">Flask</a> application that 
+        dynamically generates
+        a HTML5 web application using 
+        <a class="alert-link" href="#">Bootstrap</a>, and 
+        <a class="alert-link" href="#">Knockout.js</a>.
+      </p>
+    </article>
+    <article class="panel panel-default">
+     <div class="panel-heading">
+       BIBFRAME Datastore
+     </div>
+     <div class="panel-body">
 
-
+     </div>
+    </article>
   </section>
 </div>
+{{ slide_nav.generate({'name': 'TIGER Catalog', 'page': 'tiger'}, {'name': 'Catalog Pull Platform', 'page': 'cpp'}, '  ') }}
+<br>
 {% endblock %}
