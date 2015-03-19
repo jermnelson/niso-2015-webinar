@@ -23,20 +23,20 @@
            {% if page == 2 %}<span class="sr-only">(current)</span>{% endif %}
            </a>
         </li>
+        <li {% if page == 5 %}class="active"{% endif %}>
+            <a href="{{ url_for('slide', page='cpp') }}">Catalog Pull Platform
+            {% if page == 5 %}<span class="sr-only">(current)</span>{% endif %}
+           </a>
+        </li>
         <li {% if page == 3 %}class="active"{% endif %}>
             <a href="{{ url_for('slide', page='tiger') }}">TIGER Catalog
 	    {% if page == 3 %}<span class="sr-only">(current)</span>{% endif %}
             </a>
         </li>
         <li {% if page == 4 %}class="active"{% endif %}>
-            <a href="{{ url_for('slide', page='bf-catalog') }}">BIBFRAME Catalog
+            <a href="{{ url_for('slide', page='bf-catalog') }}">BIBCAT
 	    {% if page == 4 %}<span class="sr-only">(current)</span>{% endif %}
             </a>
-        </li>
-        <li {% if page == 5 %}class="active"{% endif %}>
-            <a href="{{ url_for('slide', page='cpp') }}">Catalog Pull Platform
-            {% if page == 5 %}<span class="sr-only">(current)</span>{% endif %}
-           </a>
         </li>
      </ul>
     </div>
