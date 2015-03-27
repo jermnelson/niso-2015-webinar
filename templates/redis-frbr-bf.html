@@ -5,19 +5,25 @@
 {% endblock %}
 
 {% block main %}
-{{ slide_nav.generate({'name': 'Early Experiments', 'page': 'early-experiments'}, {'name': 'Catalog Pull Platform', 'page': 'cpp'},  'Redis, FRBR, & BIBFRAME') }}
+{{ slide_nav.generate({'name': 'Early Experiments', 'page': 'early-experiments'}, {'name': 'Catalog Pull Platform', 'page': 'cpp'},  'Redis, FRBR, & BIBFRAME<br><small>(2011-2013)</small>') }}
 <hr>
 <section class="row">
-    <article class="col-md-4 col-sm-4 ">
-        <h2>Redis</h2>
+    <article class="col-md-4 col-sm-4" style="background-color: black">
+      <img src="{{ url_for('static', filename='images/redis.png') }}" alt="Redis Logo" class="img-rounded"> 
+      <p class="lead text-danger">
+        <a href="http://redis.io">Redis</a> is a key-value NoSQL data-storage technology.  
+      </p>
     </article>
     <article class="col-md-4 col-sm-4">
         <h2>FRBR</h2>
 
     </article>
     <article class="col-md-4 col-sm-4">
+        <img src="{{ url_for('static', filename='images/bf-tn.png') }}" alt="BIBFRAME Logo" class="img-rounded pull-left"> 
         <h2>BIBFRAME</h2>
-
+        <p class="lead ">
+          BIBFRAME, short Bibliographic Framework, is a Library of Congress initiative for  
+        </p>
     </article>
 </section>
 {% endblock %}

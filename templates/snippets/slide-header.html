@@ -10,7 +10,7 @@
   {% endif %}
   {% if title %}
   <section class="col-md-4 {% if not previous %}col-md-offset-4{% endif %}">
-    <h2 class="center-block">{{ title }}</h2>
+    <h2 class="center-block">{{ title|safe }}</h2>
   </section>
   {% endif %}
   {% if next %}
