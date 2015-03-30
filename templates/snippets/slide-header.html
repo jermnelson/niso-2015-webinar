@@ -4,7 +4,7 @@
   <nav class="col-md-4">
     <a class="btn btn-warning pull-left" href="{{ url_for('slide', page=previous.page) }}">
       <i class="glyphicon glyphicon-triangle-left"></i>
-      {{ previous.name }}
+      {{ previous.name|safe }}
     </a>
   </nav>
   {% endif %}
@@ -16,7 +16,7 @@
   {% if next %}
   <nav class="col-md-4">
     <a class="btn btn-success pull-right" href="{{ url_for('slide', page=next.page) }}">
-     {{ next.name }}
+     {{ next.name|safe }}
      <i class="glyphicon glyphicon-triangle-right"></i>      
     </a>
   </nav>

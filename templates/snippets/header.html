@@ -1,5 +1,5 @@
 {% macro generate(page) -%}
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-inverse navbar-default">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -19,7 +19,7 @@
           </a>
         </li>
         <li {% if page == 2 %}class="active"{% endif %}>
-           <a href="{{ url_for('slide', page='redis-frbr-bf') }}">Redis, FRBR, &amp; BIBFRAME<br>2011-2013
+           <a href="{{ url_for('slide', page='frbr-redis-bf') }}">FRBR, Redis, &amp; BIBFRAME<br>2011-2013
            {% if page == 2 %}<span class="sr-only">(current)</span>{% endif %}
            </a>
         </li>
@@ -34,7 +34,7 @@
             </a>
         </li>
         <li {% if page == 4 %}class="active"{% endif %}>
-            <a href="{{ url_for('slide', page='bf-catalog') }}">BIBCAT<br>2014-
+            <a href="{{ url_for('slide', page='bf-catalog') }}">BIBCAT<br>2015-
 	    {% if page == 4 %}<span class="sr-only">(current)</span>{% endif %}
             </a>
         </li>
