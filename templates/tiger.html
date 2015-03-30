@@ -1,5 +1,14 @@
 {% extends 'base.html' %}
 
+{% block more_css %}
+<style>
+  img.screen-shot {
+    height: 400px;
+    width: AUTO;
+  }
+</style>
+{% endblock %} 
+
 {% block header %}
     {{ header.generate(3) }}
 {% endblock %}
@@ -7,15 +16,35 @@
 {% block main %}
 {{ slide_nav.generate({'name': 'Catalog Pull Platform<br>2014-', 'page': 'cpp'}, {'name': 'BIBCAT<br>2015-', 'page': 'bf-catalog'}, 'Path to TIGER Catalog<br><small>2012-</small>') }}
 <div class="row">
+  <article class="col-md-8 col-md-offset-2">
+   <p class="lead">The path to the TIGER Catalog started from an implementation of a Django Discovery Layer,
+   called <a href="#aristotle">Aristotle</a>,
+
+  </article>
+</div>
+<div class="row">
    <article class="col-md-7">
-     <h2>Aristotle Discovery Layer<br><small>2012-2014</small></h2>
+     <h2><a name="aritotle"></a>Aristotle Discovery Layer<br><small>2012-2014</small></h2>
+     <img src="{{ url_for('static', filename='images/discovery-coloradocollege-edu.png') }}" 
+        class="img-thumbnail pull-right screen-shot">
+     <p>The first public bibliographic systems developed at Colorado College is 
+      Aristotle, a bibliographic Django project for creating discovery and 
+      <a href="http://lucene.apache.org/solr/">
+      <img src="{{ url_for('static', filename='images/solr-tn.png') }}" class="img-thumbnail pull-left">
+      </a>
+      management of born digital and physical artifacts. Aristotle uses a number 
+      of other open-source toolset including EULFedora, EULXML, Sunburnt, and PyMARC. 
+     <p>
+     <p>
+      For the Discovery interface, Aristotle uses a forked version of the Kochief Django application.
+     </p>
    </article>
    <section class="col-md-5">
      <h3>Timeline</h3>
      <dl class="dl-horizontal">
        <dt>2012-2014</dt>
        <dd>Aristotle Discovery Layer</dd>
-       <dt>2013-2015</dt>
+       <dt>2011-2015</dt>
        <dd>Aristotle Library Apps</dd>
        <dt>2013</dt>
        <dd>Prospector Discovery App</dd>
@@ -28,15 +57,28 @@
 </div>
 <div class="row">
   <article class="col-md-6">
-   <h2>Aristotle Layer Apps<br><small>2013-2015</small></h2>
+   <h2>Aristotle Layer Apps<br><small>2011-2015</small></h2>
+   <p>Prior to the Aristotle Discovery Layer, initial
+   development of a web application was started in 2011 with the purpose to allow
+   Colorado College seniors to self-submit their Thesis and supporting datasets to
+   the Library's <a href="#">Digital Repository</a>.
+   
+    <img src="{{ url_for('static', filename='images/ccetd.png') }}" class="img-thumbnail pull-right">
+   </p>
   </article>
   <article class="col-md-6">
    <h2>Prospector Discovery App<br><small>2013</small></h2>
+   <img src="{{ url_for('static', filename='images/prospector-redis-lib-services-platform.png') }}"
+     class="img-thumbnail pull-left screen-shot">
   </article>
 </div>
 <div class="row">
   <article class="col-md-8 col-md-offset-4">
     <h2>TIGER Catalog (1st iteration)<br><small>2014</small></h2>
+    <a href="http://catalog.coloradocollege.edu">
+      <img src="{{ url_for('static', filename='images/cpp-example.png') }}" class="img-thumbnail pull-left screen-shot">
+    </a>
+
   </article>
 </div>
 <div class="row">
