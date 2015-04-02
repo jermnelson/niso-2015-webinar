@@ -5,7 +5,7 @@
 {% endblock %}
 
 {% block main %}
-{{ slide_nav.generate({'name': 'TIGER Catalog', 'page': 'tiger'}, {'name': 'Catalog Pull Platform', 'page': 'cpp'}, 'BIBCAT - BIBFRAME Catalog') }}
+{{ slide_nav.generate({'name': 'TIGER Catalog<br>2014-', 'page': 'tiger'}, None, 'BIBCAT - BIBFRAME Catalog<br><small>(2015-)</small>') }}
 <div class="row">
   <section class="col-md-8 col-sm-10">
       <img src="http://intro2libsys.info/code4lib-2015/static/images/bibframe-search-display-system.svg">
@@ -39,6 +39,6 @@
     </article>
   </section>
 </div>
-{{ slide_nav.generate({'name': 'TIGER Catalog', 'page': 'tiger'}, {'name': 'Catalog Pull Platform', 'page': 'cpp'}, '  ') }}
+{{ slide_nav.generate({'name': 'TIGER Catalog<br>(2014-)', 'page': 'tiger'},'  ') }}
 <br>
 {% endblock %}

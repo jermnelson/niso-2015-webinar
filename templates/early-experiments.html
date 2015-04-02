@@ -5,7 +5,7 @@
 {% endblock %}
 
 {% block main %}
-{{ slide_nav.generate(None, {'name': 'Redis, FRBR, & BIBFRAME', 'page': 'redis-frbr-bf'}, 'Early Experiments') }}
+{{ slide_nav.generate(None, {'name': 'FRBR, Redis, & BIBFRAME<br>(2011-2013)', 'page': 'frbr-redis-bf'}, 'Early Experiments<br><small>2007-2010</small>') }}
 <div class="row">
   <article class="col-md-8">
    <p class="lead">Jeremy Nelson's early experiments with using NoSQL and 
@@ -50,14 +50,21 @@
      <img src="{{ url_for('static', filename='images/govdocsmanager.png') }}" alt='Screenshot of GovDocsManager Google App'>
     </section>
     <article class="col-md-6">
-      <p>The GovDocs Manager</p>
+      <p>The GovDocs Manager stored Federal and Colorado State Government Shipping List information and included a feature to
+      print physical material SuDoc and Colorado State Document call numbers using an attached label printer.</p>
     </article>
    </div>
 <hr>
 <h2><a name="serialsmanager"></a> Serials Management</h2>
    <div class="row">
      <article class="col-md-4">
-      <p>The serials management GAE application</p>
+      <p>The serials management GAE application was a replacement of an existing manual process that involved librarian or
+      staff to make a pencil hash mark on a paper form that was then tallied and entered into a Microsoft Access Database a 
+      couple times a year. The application keep a list of the physical serials still being subscribed to by the library, where
+      staff entered an entry every time an item was reshelved, offering near realtime metrics into the usage of serials in 
+      the library.</p>
+      <p>During the cost cutting measures of the worst years of the 2008 recession, this application was critical in the
+       decision to retain or cut a serial from the library's steeply declining budgets during these years.</p>
      </article>
      <section class="col-md-8">
        <img src="{{ url_for('static', filename='images/serials-management.png') }}" alt='Screenshot of GovDocsManager Google App'>
@@ -77,6 +84,8 @@
      </section>
 </div>
 <hr>
+{{ slide_nav.generate(None, {'name': 'FRBR, Redis, & BIBFRAME<br>(2011-2013)', 'page': 'frbr-redis-bf'}, ' ') }}
+
 {% endblock %}
 
 

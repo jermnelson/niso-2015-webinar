@@ -5,5 +5,19 @@
 {% endblock %}
 
 {% block main %}
-{{ slide_nav.generate({'name': 'BIBFRAME Catalog', 'page': 'bf-catalog'}, None, 'Catalog Pull Platform') }}
+{{ slide_nav.generate({'name': 'FRBR, Redis, & BIBFRAME<br>2011-2013', 'page': 'frbr-redis-bf'}, {'name': 'TIGER Catalog<br>2014-', 'page': 'tiger'}, 'Catalog Pull Platform<br><small>(2014-)</small>') }}
+<br>
+<div class="row">
+  <article class="col-md-8 col-sm-12">
+    <img src="http://intro2libsys.info/static/img/catalog-pull-platform.svg" alt="Catalog Pul Platform"> 
+
+  </article>
+  <section class="col-md-4 col-sm-12">
+
+
+  </section>
+</div>
+<hr>
+{{ slide_nav.generate({'name': 'FRBR, Redis, & BIBFRAME<br>2011-2013', 'page': 'frbr-redis-bf'}, {'name': 'TIGER Catalog<br>2014-', 'page': 'tiger'}, ' ') }}
+<hr>
 {% endblock %}

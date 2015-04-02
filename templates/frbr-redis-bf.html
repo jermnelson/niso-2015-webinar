@@ -1,0 +1,92 @@
+{% extends 'base.html' %}
+
+{% block header %}
+    {{ header.generate(2) }}
+{% endblock %}
+
+{% block main %}
+{{ slide_nav.generate({'name': 'Early Experiments<br>2007-2010', 'page': 'early-experiments'}, {'name': 'Catalog Pull Platform<br>2014-', 'page': 'cpp'},  'FRBR, Redis, & BIBFRAME<br><small>(2011-2013)</small>') }}
+<hr>
+<div class="row">
+  <article class="col-md-3 col-sm-6 well well-sm">
+   <p class="lead text-success">In June of 2010, Nelson left Western State College for a new position as the 
+    Metadata and Systems Librarian at Colorado College.</p>
+  </article>
+  <section class="col-md-8 col-sm-10">
+<a href="https://www.coloradocollege.edu"><img src="{{ url_for('static', filename='images/cclogo.jpg') }}" alt="Colorado College"></a>
+    <p class="lead text-muted">
+      Almost immediately, development work began on first automating the MARC record manipulation for
+      loading into CC's legacy ILS as well as work on a thesis submission web application.
+    </p>
+  </section>
+</div>
+<hr>
+<div role="tabpanel">
+<ul class="nav nav-pills">
+  <li role="presentation" class="active lead">
+    <a href="#frbr" aria-controls="frbr" role="tab" data-toggle="tab">FRBR</a>
+  </li>
+  <li role="presentation" class="lead">
+    <a href="#redis" aria-controls="redis" role="tab" data-toggle="tab">Redis</a>
+  </li>
+  <li role="presentation" class="lead">
+    <a href="#bibframe" aria-controls="bibframe" role="tab" data-toggle="tab">BIBFRAME</a>
+  </li>
+
+</ul>
+<div class="tab-content">
+  <section role="tabpanel" class="tab-pane active" id="frbr">
+   <h2>FRBR</h2>
+   <div class="row">
+    <article class="col-md-8 col-sm-6">
+        
+        <p class="lead">
+         FRBR, short for Functional Requirements for Bibliographic Records, is a resource-entity 
+         representation for bibliographic entities that is used in Resource Description and 
+         Access.  
+        </p>
+        <img src="{{ url_for('static', filename='images/FRBR-Group-1-entities-and-basic-relations.png') }}"
+             alt="FRBR-Group-1-entities-and-basic-relations by Jakob Voss - own creation. Licensed under GFDL via Wikimedia Commons - https://commons.wikimedia.org/wiki/File:FRBR-Group-1-entities-and-basic-relations.svg#/media/File:FRBR-Group-1-entities-and-basic-relations.svg">
+    </article>
+   </div>
+  </section>
+  <section role="tabpanel" class="tab-pane" id="redis">
+    <br>
+    <div class="row">
+    <article class="col-md-8 col-sm-8" style="background-color: black">
+      <br>
+      <img src="{{ url_for('static', filename='images/redis.png') }}" alt="Redis Logo" class="img-rounded"> 
+      <p class="lead text-danger">
+        <a href="http://redis.io">Redis</a> is an open-source key-value NoSQL data-storage technology where 
+        unique keys are associated can be associated with different data structure values like strings,
+        lists, sets, hashes, that enable access to data because Redis stores everything
+        in a computer's memory.
+      </p>
+     </article>
+    </div>
+  </section>
+  <section role="tabpanel" class="tab-pane" id="bibframe">
+   <h2>BIBFRAME</h2>
+   <div class="row">
+    <section class="col-md-2">
+      <img src="{{ url_for('static', filename='images/bf-tn.png') }}" alt="BIBFRAME Logo" class="img-rounded pull-left"> 
+    </section>
+    <article class="col-md-7 col-sm-7 well well-sm">
+        <h2>BIBFRAME</h2>
+        <p class="lead ">
+          <a href="http://bibframe.org/">BIBFRAME</a>, short Bibliographic Framework, is a Library of Congress 
+          <a href="http://www.loc.gov/bibframe/">initiative</a> to replace <a href="http://www.loc.gov/marc/">MARC 21</a>
+          with a Linked Data vocabulary. BIBFRAME is made up four major classes, Works, Instances, Annotations, and 
+          Authorities.  
+        </p>
+        <h3>BIBFRAME in Redis</h3>
+        <img src="http://journal.code4lib.org/media/issue19/nelson/title-redis-structure-500.png">
+    </article>
+   </div>
+  </section>
+</div>
+</div>
+<hr>
+{{ slide_nav.generate({'name': 'Early Experiments<br>2007-2010', 'page': 'early-experiments'}, {'name': 'Catalog Pull Platform<br>2014-', 'page': 'cpp'},  ' ') }}
+<hr>
+{% endblock %}
