@@ -14,7 +14,7 @@
 {% endblock %}
 
 {% block main %}
-{{ slide_nav.generate({'name': 'Catalog Pull Platform<br>2014-', 'page': 'cpp'}, {'name': 'BIBCAT<br>2015-', 'page': 'bf-catalog'}, 'Path to TIGER Catalog<br><small>2012-</small>') }}
+{{ slide_nav.generate({'name': 'Catalog Pull Platform<br>2014-', 'page': 'cpp'}, {'name': 'BIBCAT<br>2015-', 'page': 'bibcat'}, 'Path to TIGER Catalog<br><small>2012-</small>') }}
 <div class="row">
   <article class="col-md-8 col-md-offset-2">
    <p class="lead">The path to the TIGER Catalog started from an implementation of a Django Discovery Layer,
@@ -57,7 +57,8 @@
 </div>
 <div class="row">
   <article class="col-md-6">
-   <h2>Aristotle Layer Apps<br><small>2011-2015</small></h2>
+   <h2><a name="ala"></a>
+     Aristotle Library Apps<br><small>2011-2015</small></h2>
    <p>Prior to the Aristotle Discovery Layer, initial
    development of a web application was started in 2011 with the purpose to allow
    Colorado College seniors to self-submit their Thesis and supporting datasets to
@@ -68,8 +69,17 @@
   </article>
   <article class="col-md-6">
    <h2>Prospector Discovery App<br><small>2013</small></h2>
-   <img src="{{ url_for('static', filename='images/prospector-redis-lib-services-platform.png') }}"
+      <p>For a 2013 Code4Lib presentation, a new Django app was created in the 
+   <a href="#ala">Aristotle Library Apps</a> that used a random selection 
+    from the member libraries of the 
+    <a href="https://www.coalliance.org/">Colorado Alliance of Research 
+    Libraries's</a> union catalog. A custom mapping between MARC to the 
+    then BIBFRAME model was developed that converted MARC21 to Redis 
+    BIBFRAME Redis data structures. 
+      </p>
+      <img src="{{ url_for('static', filename='images/prospector-redis-lib-services-platform.png') }}"
      class="img-thumbnail pull-left screen-shot">
+
   </article>
 </div>
 <div class="row">

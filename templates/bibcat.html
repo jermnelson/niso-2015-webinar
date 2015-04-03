@@ -8,8 +8,19 @@
 {{ slide_nav.generate({'name': 'TIGER Catalog<br>2014-', 'page': 'tiger'}, None, 'BIBCAT - BIBFRAME Catalog<br><small>(2015-)</small>') }}
 <div class="row">
   <section class="col-md-8 col-sm-10">
-      <img src="http://intro2libsys.info/code4lib-2015/static/images/bibframe-search-display-system.svg">
-
+    <p class="lead">
+     In the fall of 2014, the Library of Congress solicited bids for a
+     new BIBFRAME Search and Display system. Aaron Schmidt of Influx
+     Library User Interface Design and Jeremy Nelson successful proposal
+     was <a href="http://bibcat.org">
+      <img src="{{ url_for('static', filename='images/bibcat.png') }}"
+      class="img-thumbnail pull-left" alt="BIBCAT - BIBFRAME Catalog"></a> 
+     the basis for open-source 
+     <a href="#">BIBFRAME Catalog</a> (shortened to BIBCAT) and a backend
+     <a href="#">BIBFRAME Datastore</a> that has a Semantic Server REST
+     API to communicate using Fedora 4 as a linked-data platform with
+     a Elasticsearch and Apache Fuseki SPARQL endpoint.
+    </p>
   </section>
   <section class="col-md-4 col-sm-3">
     <article class="alert alert-info alert-dismissible" role="alert">
@@ -38,6 +49,11 @@
      </div>
     </article>
   </section>
+</div>
+<hr>
+<h2>How it works?</h2>
+<div class="row">
+  <img src="http://intro2libsys.info/code4lib-2015/static/images/bibframe-search-display-system.svg">
 </div>
 {{ slide_nav.generate({'name': 'TIGER Catalog<br>(2014-)', 'page': 'tiger'},'  ') }}
 <br>
