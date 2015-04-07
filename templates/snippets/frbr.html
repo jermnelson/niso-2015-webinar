@@ -1,0 +1,41 @@
+<section role="tabpanel" class="tab-pane active" id="frbr">
+  <h2>FRBR</h2>
+  <div class="row">
+   <article class="col-md-10 col-sm-8">
+     <p class="lead">
+     FRBR, short for <strong>Functional Requirements for Bibliographic Records</strong>, is a resource-entity 
+     representation for bibliographic entities that most significant use is in RDF - Resource Description and 
+     Access - an effort to replace AACR2 cataloging rules.  
+    </p>
+   </article>
+  </div>
+  <div class="row">
+   <section class="col-md-6">
+    <img src="{{ url_for('static', filename='images/FRBR-Group-1-entities-and-basic-relations.png') }}"
+     alt="FRBR-Group-1-entities-and-basic-relations by Jakob Voss - own creation. Licensed under GFDL via Wikimedia Commons - https://commons.wikimedia.org/wiki/File:FRBR-Group-1-entities-and-basic-relations.svg#/media/File:FRBR-Group-1-entities-and-basic-relations.svg"><br>
+    <small>Source: Voss at <em><a href="https://commons.wikimedia.org/wiki/File:FRBR-Group-1-entities-and-basic-relations.svg">https://commons.wikimedia.org/wiki/File:FRBR-Group-1-entities-and-basic-relations.svg</a></em></small>
+   </section>
+   <article class="col-md-6">
+     <section class="panel panel-success">
+       <div class="panel-heading" style="color: black;">FRBR in E-Library</div>
+       <div class="panel-body">
+         As mentioned in the <a href="{{ url_for('slide', page='early-experiments') }}">previous slide</a>,
+         the Western's E-Library used FRBR representations of electronic resources
+         stored on Google App Engine's commercial datastore. 
+
+       </div>
+     </section>  
+     <section class="panel panel-default">
+        <div class="panel-heading">FRBR Experiments at Colorado College</div>
+        <div class="panel-body">
+          Initially experimentation with using Redis as a bibliographic datastore
+          began in 2011 with attempting to model FRBR entities in Redis using a
+          key pattern to represent the core properties of a FRBR entity. 
+
+        </div>
+     </section>
+
+   </article>
+  </div>
+</section>
+

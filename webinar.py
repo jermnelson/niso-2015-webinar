@@ -3,15 +3,15 @@ __license__ = "GPLv3"
 
 from flask import Flask, render_template
 
-webinar = Flask(__name__)
+app = Flask(__name__)
 
-@webinar.route("/<path:page>")
+@app.route("/<path:page>")
 def slide(page):
     return render_template("{}.html".format(page))
 
-@webinar.route("/")
+@app.route("/")
 def index():
     return render_template('index.html')
 
 if __name__ == '__main__':
-    webinar.run('0.0.0.0', 20152, debug=True)
+    app.run('0.0.0.0', 20152, debug=True)

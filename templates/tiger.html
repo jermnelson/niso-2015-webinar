@@ -14,7 +14,7 @@
 {% endblock %}
 
 {% block main %}
-{{ slide_nav.generate({'name': 'Catalog Pull Platform<br>2014-', 'page': 'cpp'}, {'name': 'BIBCAT<br>2015-', 'page': 'bibcat'}, 'Path to TIGER Catalog<br><small>2012-</small>') }}
+{{ slide_nav.generate({'name': 'FRBR, Redis, & BIBFRAME<br>(2011-2013)', 'page': 'frbr-redis-bf'}, {'name': 'Catalog Pull Platform<br>2014-', 'page': 'cpp'}, 'Path to TIGER Catalog<br><small>2012-</small>') }}
 <div class="row">
   <article class="col-md-8 col-md-offset-2">
    <p class="lead">The path to the TIGER Catalog started from an implementation of a Django Discovery Layer,
@@ -83,21 +83,37 @@
   </article>
 </div>
 <div class="row">
-  <article class="col-md-8 col-md-offset-4">
+  <article class="col-md-9 col-md-offset-2">
     <h2>TIGER Catalog (1st iteration)<br><small>2014</small></h2>
     <a href="http://catalog.coloradocollege.edu">
       <img src="{{ url_for('static', filename='images/cpp-example.png') }}" class="img-thumbnail pull-left screen-shot">
     </a>
 
+
+    <p>
+      The first iteration of the <a href="http://catalog.coloradocollege.edu/">TIGER Catalog</a> uses
+      Solr and MongoDB for backend storage and search, and Flask for the web-front end. <a href="https://www.mongodb.org/">
+      <img src="{{ url_for('static', filename='images/mongo-db-logo.png') }}" alt="MongoDB Logo" class="pull-right"></a>
+    This iteration uses
+      json-serialized MARC21 records that are saved into MongoDB with Solr used for searching.       
+    </p>
   </article>
 </div>
+<br>
 <div class="row">
   <article class="col-md-8">
-    <h2>TIGER Catalog (2nd iteration)
-     <br><small>2015-</small>
-    </h2>
+    <div class="panel panel-default">
+      <section class="panel-heading">
+       <h2>TIGER Catalog (2nd iteration)
+       <br><small>2015-</small></h2>
+      </section>
+      <section class="panel-body">
+       <p class="lead">
+               
+       </p>  
+      </section> 
   </article>
 </div>
-{{ slide_nav.generate({'name': 'Catalog Pull Platform<br>2014-', 'page': 'cpp'}, {'name': 'BIBCAT<br>2015-', 'page': 'bibcat'}, ' ') }}
+{{ slide_nav.generate({'name': 'FRBR, Redis, & BIBFRAME<br>(2011-2013)', 'page': 'frbr-redis-bf'}, {'name': 'Catalog Pull Platform<br>2014-', 'page': 'cpp'}, ' ') }}
 <hr>
 {% endblock %}

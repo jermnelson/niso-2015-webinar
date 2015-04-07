@@ -57,7 +57,7 @@
 <hr>
 <h2><a name="serialsmanager"></a> Serials Management</h2>
    <div class="row">
-     <article class="col-md-4">
+     <article class="col-md-4 col-md-offset-2">
       <p>The serials management GAE application was a replacement of an existing manual process that involved librarian or
       staff to make a pencil hash mark on a paper form that was then tallied and entered into a Microsoft Access Database a 
       couple times a year. The application keep a list of the physical serials still being subscribed to by the library, where
@@ -66,19 +66,31 @@
       <p>During the cost cutting measures of the worst years of the 2008 recession, this application was critical in the
        decision to retain or cut a serial from the library's steeply declining budgets during these years.</p>
      </article>
-     <section class="col-md-8">
+     <section class="col-md-6">
        <img src="{{ url_for('static', filename='images/serials-management.png') }}" alt='Screenshot of GovDocsManager Google App'>
 
      </section>
    </div>
 <hr>
-<h2><a name="elibrary"></a>WSC's eLibrary</h2>
+<h2><a name="elibrary"></a>WSC's E-Library</h2>
 <div class="row">
-     <article class="col-md-3">
-       <p>The eLibrary project at WSC was the cumulation of the experiences developing 
-
+     <article class="col-md-4">
+       <p>The E-Library project at WSC was the cumulation of the experiences developing the GovDocsManager and Serials Management
+        Google App Engine. The purpose of the E-Library was explained in a 2010 Code4Lib Article,
+        
+        <blockquote>
+          At the Leslie J. Savage Library at Western State College E-Library, running on 
+          Google App Engine, to manage the presentation 
+          of purchased and free electronic resources. EBSCO's Academic Search 
+          Premier, LexisNexis, JSTOR, and others, along with vetted research-oriented 
+          websites from government, corporations, and non-profits, are presented to 
+          our primary patrons, liberal arts undergraduate students and faculty.
+          <footer>Nelson, Cleary in 
+           <em><a href="http://journal.code4lib.org/articles/4357">FRBRizing an E-Library : 
+           Migrating from Dublin Core to FRBR and MODS</a></em>
+        </blockquote>
      </article>
-     <section class="col-md-9">
+     <section class="col-md-8">
         <img src="{{ url_for('static', filename='images/elibrary-wsc-gae.png') }}">
    
      </section>
