@@ -9,10 +9,6 @@
 <br>
 <div class="row">
   <article class="col-md-8 col-sm-12">
-    <img src="http://intro2libsys.info/static/img/catalog-pull-platform.svg" alt="Catalog Pull Platform"> 
-
-  </article>
-  <section class="col-md-4 col-sm-12">
     <h3>What is &hellip;?</h3>
     <p class="lead">
      The Catalog Pull Platform offers individual libraries robust and 
@@ -23,7 +19,10 @@
     Popularized by John Seely Brown and John Hagel III, a pull 
     platform &hellip; 
     </p>
+    <img src="http://intro2libsys.info/static/img/catalog-pull-platform.svg" alt="Catalog Pull Platform"> 
 
+  </article>
+  <section class="col-md-4 col-sm-12">
     <div class="panel panel-default">
       <div class="panel-heading">
         <h3 class="panel-title">People demand</h3>
@@ -58,27 +57,66 @@
   </section>
 </div>
 <hr>
-<h2>Sources of Pull</h2>
-<div class="row">
-   <article class="col-md-4">
-    <h3>People</h3>
-   </article>
-   <article class="col-md-4">
-    <h3>Institutions</h3>
-   </article>
-   <article class="col-md-4">
-    <h3>Algorithms</h3>
-   </article>
-</div>
-<hr>
 <h2>Semantic Server</h2>
 <div class="row">
   <section class="col-md-4">
     <h3>REST API</h3>
->>>>>>> 5a7b285981fe41c43a572177de28a73a84ce0580
+    <p class="lead">The semantic server's primary function is providing a REST API that hides the 
+    specific implementation details from other applications that may need to interact with BIBCAT
+    or other bibliographic system. The semantic server's REST API is based on a python project
+    called <a href="#">Falcon</a>, a Python-based framework for creating cloud-based REST API, 
+    initial developed and continued to be sponsored by Rackspace.  
   </section>
   <article class="col-md-8">
     <h3>Technology Stack</h3>
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingOne">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#fedora4" aria-expanded="true" aria-controls="collapseOne">
+         Fedora 4 
+        </a>
+      </h4>
+    </div>
+    <div id="fedora4" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+      <div class="panel-body">
+       <img src="{{ url_for('static', filename='images/fedora4_logo.png') }}" class="img-thumbnail pull-right">
+      Fedora 4 is the latest production release of the established, open-source 
+      digital repository platform sponsored by <a href="http://www.duraspace.org/">Duraspace</a>.
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingTwo">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#elastic-search" aria-expanded="false" aria-controls="elastic-search">
+         Elasticsearch 
+        </a>
+      </h4>
+    </div>
+    <div id="elastic-search" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+      <div class="panel-body">
+        <img src="{{ url_for('static', filename='images/elastic-search-logo.png') }}" class="img-thumbnail pull-left">
+        Elasticsearch, based on Apache Lucene, is
+     </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingThree">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#fuseki" aria-expanded="false" aria-controls="fuseki">
+         Apache Fuseki 
+        </a>
+      </h4>
+    </div>
+    <div id="fuseki" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+      <div class="panel-body">
+        Fuseki 
+     </div>
+    </div>
+  </div>
+</div>
+
   </article> 
 </div>
 <hr>
