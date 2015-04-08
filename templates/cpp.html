@@ -31,7 +31,7 @@
      Pull models are emerging as a response to growing uncertainty. Instead of dealing 
      with uncertainty through tighter control, pull models do the opposite. They seek 
      to expand the opportunity for creativity by local participants dealing with immediate 
-     needs. hell Rather than seeking to constrain the 
+     needs&hellip;Rather than seeking to constrain the 
      resources available to people, pull models strive to continually expand the choices 
      available while at the same time helping people to find the resources that are most
      relevant to them.
@@ -66,7 +66,7 @@
         <h3 class="panel-title">Algorithmic demand</h3>
       </div>
       <div class="panel-body">
-        To function as a true 21st century technology pull platform, the Catalog Pull's third
+        To function as a 21st century technology pull platform, the Catalog Pull's third
         source of demand, loosely classified as <strong>Algorithmic</strong>, refers to a rich
         set of APIs and linked-data interfaces that are connecting resources in the 
         BIBFRAME Datastore, a specific implementation of a 
@@ -83,9 +83,12 @@
     <h3>REST API</h3>
     <p class="lead">The semantic server's primary function is providing a REST API that hides the 
     specific implementation details from other applications that may need to interact with BIBCAT
-    or other bibliographic system. The semantic server's REST API is based on a python project
-    called <a href="#">Falcon</a>, a Python-based framework for creating cloud-based REST API, 
-    initial developed and continued to be sponsored by Rackspace.  
+    or other bibliographic and technological systems. This open-source project is available on 
+    Github at 
+    <a href="https://github.com/jermnelson/semantic-server">https://github.com/jermnelson/semantic-server</a></p>
+    <p class="lead">The semantic server's REST API uses an open-source project
+    called <a href="http://falconframework.org/">Falcon</a>, a Python-based framework for creating cloud-based REST APIs, 
+    that was initially developed by Rackspace and continued to be sponsored by them.  
   </section>
   <article class="col-md-8">
     <h3>Technology Stack</h3>
@@ -146,6 +149,6 @@
   </article> 
 </div>
 <hr>
-{{ slide_nav.generate({'name': 'FRBR, Redis, & BIBFRAME<br>2011-2013', 'page': 'frbr-redis-bf'}, {'name': 'TIGER Catalog<br>2014-', 'page': 'tiger'}, ' ') }}
+{{ slide_nav.generate({'name': 'FRBR, Redis, & BIBFRAME<br>2011-2013', 'page': 'frbr-redis-bf'}, {'name': 'BIBCAT<br>2015-', 'page': 'bibcat'}, ' ') }}
 <hr>
 {% endblock %}

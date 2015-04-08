@@ -20,19 +20,19 @@
    PAAS (Platform-as-a-Service development environment they called 
    <a href="https://cloud.google.com/appengine/">Google App Engine (GAE)</a>. This preview
    offered a Python-based application SDK loosely based on <a href="https://www.djangoproject.com/">Django</a>
-   that ran on Google's cloud and access to Google Data storage technologies through the 
+   that ran on Google's cloud with access to Google Data storage technologies through the 
    underlying GAE APIs. 
    </p>
    <p>
    To explore this new environment, Nelson created three GAE applications, a GovDocs Manager for handling the shipping
    lists in the material processing workflow of Federal and Colorado State documents, an application for 
-   tracking recording usage for print magazines and scholarly journals, and finally a "eLibrary" that presented a display 
+   tracking and recording usage for print magazines and scholarly journals, and finally a "eLibrary" that presented a display 
    of electronic resources organized by title, subject, and popularity.
    </p>
    <p>
-   Before GovDocsManager and Serials Management GAE applications,
-   accomplishing these tasks involved complicated manual workflows using paper tracking marks and fragile 
-   Microsoft Access databases that provenance.
+   Previous to the development of the GovDocsManager and Serials Management GAE applications, the Savage Library 
+   accomplished these tasks with complicated manual workflows using paper tracking marks and fragile 
+   Microsoft Access databases.
    </p>
   </article>
   <nav class="col-md-4">
@@ -52,7 +52,7 @@
     </section>
     <article class="col-md-6">
       <p>The GovDocs Manager stored Federal and Colorado State Government Shipping List information and included a feature to
-      print physical material SuDoc and Colorado State Document call numbers using an attached label printer.</p>
+      print SuDoc and Colorado State Document call numbers using an attached label printer.</p>
     </article>
    </div>
 <hr>
@@ -64,8 +64,8 @@
       couple times a year. The application keep a list of the physical serials still being subscribed to by the library, where
       staff entered an entry every time an item was reshelved, offering near realtime metrics into the usage of serials in 
       the library.</p>
-      <p>During the cost cutting measures of the worst years of the 2008 recession, this application was critical in the
-       decision to retain or cut a serial from the library's steeply declining budgets during these years.</p>
+      <p>During the cost cutting measures of the worst years of the recent recession, this application was critical in the
+       decision to retain or cut a serial from the library's steeply declining budgets during those years.</p>
      </article>
      <section class="col-md-6">
        <img src="{{ url_for('static', filename='images/serials-management.png') }}" alt='Screenshot of GovDocsManager Google App'>
@@ -77,16 +77,16 @@
 <div class="row">
      <article class="col-md-4">
        <p>The E-Library project at WSC was the cumulation of the experiences developing the GovDocsManager and Serials Management
-        Google App Engine. The purpose of the E-Library was explained in a 2010 Code4Lib Article,
+        on Google App Engine. The purpose of the E-Library was explained in a 2010 Code4Lib Article,
         
         <blockquote>
-          At the Leslie J. Savage Library at Western State College E-Library, running on 
+          At the Leslie J. Savage Library&hellip; [the] E-Library, running on 
           Google App Engine, to manage the presentation 
           of purchased and free electronic resources. EBSCO's Academic Search 
           Premier, LexisNexis, JSTOR, and others, along with vetted research-oriented 
           websites from government, corporations, and non-profits, are presented to 
           our primary patrons, liberal arts undergraduate students and faculty.
-          <footer>Nelson, Cleary in 
+          <footer>Jeremy Nelson and Alan Cleary in 
            <em><a href="http://journal.code4lib.org/articles/4357">FRBRizing an E-Library : 
            Migrating from Dublin Core to FRBR and MODS</a></em>
         </blockquote>

@@ -12,16 +12,24 @@
      In the fall of 2014, the Library of Congress solicited bids for a
      new BIBFRAME Search and Display system. Aaron Schmidt of Influx
      Library User Interface Design and Jeremy Nelson successful proposal
-     was <a href="http://bibcat.org">
+     is <a href="http://bibcat.org">
       <img src="{{ url_for('static', filename='images/bibcat.png') }}"
       class="img-thumbnail pull-left" alt="BIBCAT - BIBFRAME Catalog"></a> 
-     the basis for open-source 
-     <a href="#">BIBFRAME Catalog</a> (shortened to BIBCAT) and a backend
-     <a href="#">BIBFRAME Datastore</a> that has a Semantic Server REST
-     API to communicate using Fedora 4 as a linked-data platform with
-     a Elasticsearch and Apache Fuseki SPARQL endpoint.
+     the basis for open-source the
+     <a href="https://github.com/jermnelson/bibframe-catalog">BIBFRAME Catalog</a> (shortened to BIBCAT) and a backend
+     <a href="https://github.com/jermnelson/BIBFRAME-Datastore.git">BIBFRAME Datastore</a> that extends the Semantic Server REST
+     API to communicate wth Fedora 4 as a linked-data platform,  
+     a Elasticsearch for search, and Apache Fuseki as a SPARQL endpoint.
     </p>
-  </section>
+    <h2>Initial Build-Measure-Learn Iteration</h2>
+    <p class="lead">
+     After a somewhat slow start, the first Minimum Viable Product (MVP) of BIBCAT 
+     was released in the last Month. This release was demonstrate the BIBFRAME Datastore management
+     of a small sample of linked-data provided by the Library of Congress. The web UI front-end
+     continues to be created as part of the current <strong>Build</strong> step in BIBCAT's
+     second iteration of a Build-Measure-Learn loop. 
+    </p>
+    </section>
   <section class="col-md-4 col-sm-3">
     <article style="color: black" class="alert alert-info alert-dismissible" role="alert">
       <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
@@ -29,11 +37,11 @@
       <p>
         <a href="http://bibcat.org" class="alert-link">BIBCAT</a>, 
         the BIBFRAME Catalog,
-        is a <a class="alert-link" href="#">Flask</a> application that 
+        is a <a class="alert-link" href="http://flask.pocoo.org/">Flask</a> application that 
         dynamically generates
         a HTML5 web application using 
-        <a class="alert-link" href="#">Bootstrap</a>, and 
-        <a class="alert-link" href="#">Knockout.js</a>.
+        <a class="alert-link" href="http://getbootstrap.com/">Bootstrap</a>, and 
+        <a class="alert-link" href="http://knockoutjs.com/">Knockout.js</a>.
       </p>
     </article>
     <article class="panel panel-default">
@@ -52,10 +60,26 @@
   </section>
 </div>
 <hr>
-<h2>How does it work?</h2>
+<h3>How does it work?</h3>
 <div class="row">
   <img src="http://intro2libsys.info/code4lib-2015/static/images/bibframe-search-display-system.svg">
 </div>
+<br>
+<h3>Second Build-Measure-Learn Iteration - May 2015</h2>
+<p class="lead bg-info">
+  Currently in its second BML iteration, BIBCAT's next Build release has the following
+  features pulled from individual and institutional requirements: 
+</p>
+<ul class="lead">
+ <li>Finish and implement detailed Views of Work/Instance and selected authorities</li>
+ <li>Implement typeahead search that clusters major BIBFRAME classes as user enters search 
+  query</li>
+ <li>Implement infinite scrolling for search results</li>
+ <li>Provide <a href="https://www.docker.com/">Docker</a> images for BIBCAT
+  <img src="https://d3oypxn00j2a10.cloudfront.net/0.16.0/img/nav/docker-logo-loggedout.png" >
+ </li>
+</ul>
 {{ slide_nav.generate( {'name': 'Catalog Pull Platform<br>2014-', 'page': 'cpp'},'  ') }}
 <br>
+
 {% endblock %}

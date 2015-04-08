@@ -48,21 +48,24 @@
        <p class="lead">Starting with early experiments 
         modeling bibliographic entities using <a href="https://cloud.google.com/appengine/">Google App Engine</a>
         &amp; <a href="http://lucene.apache.org/solr/">Solr</a>, the library moved to 
-        using <a href="http://redis.io">Redis</a> as a bibliographic store for 
+        using <a href="http://redis.io">Redis</a> as a bibliographic data-store for 
         <a href=" http://www.ifla.org/publications/functional-requirements-for-bibliographic-records">FRBR</a> and BIBFRAME entities. Limitations with Redis
-        lead to further experimental systems with <a href="https://www.mongodb.org/">MongoDB</a> 
-        and Solr, leading eventually to an exciting opportunity for 
-        Linked-Data catalog sponsored by the Library of Congress. 
+        lead to further experimental systems development using <a href="https://www.mongodb.org/">MongoDB</a> 
+        and Solr, leading eventually to an exciting opportunity for an open-source 
+        linked-data catalog sponsored by the Library of Congress. 
+       </p>
+       <p class="lead">
         This new project uses
         <a href="http://fedorarepository.org/">Fedora 4</a> as a 
         <a href="http://www.w3.org/TR/ldp/">Linked Data Platform</a>
         supported by <a href="https://www.elastic.co/products/elasticsearch">Elastic Search</a>, 
         <a href="http://jena.apache.org/documentation/serving_data/">Apache Fuseki</a>, and 
         <a href="http://redis.io">Redis</a> that is
-        being actively developed in the upcoming <a href="http://bibcat.org">BIBCAT</a> - short for BIBFRAME Catalog -
-        for the Library of Congress. 
-        The future plans for the Colorado College's Library is building a new library website and catalog base
-        on BIBCAT and the BIBFRAME Datastore for the library's bibliographic and operational needs.  
+        being actively developed in the upcoming <a href="http://bibcat.org">BIBCAT</a>, short for BIBFRAME Catalog.
+ 
+        The future plans for the Colorado College's Library include a new library website and catalog 
+        built by extending the BIBCAT and the BIBFRAME Datastore projects for Tutt Library's bibliographic and operational 
+        needs.  
       </p>
       <a href="{{ url_for('slide', page='early-experiments') }}" class="pull-right btn btn-lg btn-info">
          Early experiments <i class="glyphicon glyphicon-triangle-right"></i>

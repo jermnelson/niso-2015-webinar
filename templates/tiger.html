@@ -17,14 +17,16 @@
 {{ slide_nav.generate({'name': 'FRBR, Redis, & BIBFRAME<br>(2011-2013)', 'page': 'frbr-redis-bf'}, {'name': 'Catalog Pull Platform<br>2014-', 'page': 'cpp'}, 'Path to TIGER Catalog<br><small>2012-</small>') }}
 <div class="row">
   <article class="col-md-8 col-md-offset-2">
-   <p class="lead">The path to the TIGER Catalog started from an implementation of a Django Discovery Layer,
+   <p class="lead">The path to a new open-source catalog for Colorado College 
+   started witn an implementation of a Django Discovery Layer,
    called <a href="https://github.com/jermnelson/Discover-Aristotle">Aristotle</a>. Needing
-   to support other uses such as an application for Senior to self-submit their 
-   <a href="https://github.com/Tutt-Library/ccetd">thesis</a>,
+   to support other uses such as an application for college seniors to self-submit their 
+   <a href="https://github.com/Tutt-Library/ccetd">thesis</a>, and internal uses like a 
    <a href="https://github.com/jermnelson/aristotle-library-apps/tree/master/fedora_utilities">Fedora Repository PID mover</a>, 
    <a href="https://github.com/jermnelson/aristotle-library-apps/tree/master/marc_batch">
-    MARC21 batch processing</a>, and other
-   internal uses at Colorado College's Tutt Library.
+    MARC21 batch processing</a>, 
+   resulted in a new Django application called
+   <a href="https://github.com/jermnelson/aristotle-library-apps.git">Aristotle Library Apps</a>.
    </p>
    <p class="lead">
     In doing the programming and research behind a January 2013 
@@ -32,7 +34,9 @@
     <a href="http://tuttdemo.coloradocollege.edu/code4lib/">presentation</a> at the 
     Code4Lib conference with Sheila Yu of the University of Denver, a  
     <a href="https://github.com/jermnelson/aristotle-library-apps/tree/prospector/">Redis-BIBFRAME 
-    branch</a> the Aristotle Library Apps. This research 
+    branch</a> the Aristotle Library Apps was developed as an example of consortium 
+    union catalog based on the MARC records from <a href="https://www.coalliance.org/">Colorado Alliance of Research
+    Libraries</a> Prospector library. This research 
     <a href="http://tuttdemo.coloradocollege.edu/">demo</a> is still running.
   </p>
   </article>
@@ -80,7 +84,10 @@
    the Library's <a href="#">Digital Repository</a>.
    <img src="{{ url_for('static', filename='images/ccetd.png') }}" 
     class="img-thumbnail pull-right">. This approach resulted in a couple of
-    other internal 
+    other internal applications, including a Fedora Repository PID mover and
+    a metadata batch application for adding multiple Fedora Objects using a
+    template.
+
    </p>
   </article>
   <article class="col-md-6">
@@ -126,8 +133,7 @@
         <img src="{{ url_for('static', filename='images/cc-tiger-logo.png') }}"
           class="img-thumbnail pull-right">
         Extends <a href="{{ url_for('slide', page='bibcat') }}">BIBCAT</a> by pulling directly from
-        the requirements of Colorado College's People and Institutions for library . 
-                   
+        the requirements of Colorado College's People and Institutions. 
        </p>  
       </section> 
   </article>
