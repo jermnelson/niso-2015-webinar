@@ -18,8 +18,23 @@
 <div class="row">
   <article class="col-md-8 col-md-offset-2">
    <p class="lead">The path to the TIGER Catalog started from an implementation of a Django Discovery Layer,
-   called <a href="#aristotle">Aristotle</a>,
-
+   called <a href="https://github.com/jermnelson/Discover-Aristotle">Aristotle</a>. Needing
+   to support other uses such as an application for Senior to self-submit their 
+   <a href="https://github.com/Tutt-Library/ccetd">thesis</a>,
+   <a href="https://github.com/jermnelson/aristotle-library-apps/tree/master/fedora_utilities">Fedora Repository PID mover</a>, 
+   <a href="https://github.com/jermnelson/aristotle-library-apps/tree/master/marc_batch">
+    MARC21 batch processing</a>, and other
+   internal uses at Colorado College's Tutt Library.
+   </p>
+   <p class="lead">
+    In doing the programming and research behind a January 2013 
+    <a href="http://journal.code4lib.org/articles/7349">article</a> and February 2013 
+    <a href="http://tuttdemo.coloradocollege.edu/code4lib/">presentation</a> at the 
+    Code4Lib conference with Sheila Yu of the University of Denver, a  
+    <a href="https://github.com/jermnelson/aristotle-library-apps/tree/prospector/">Redis-BIBFRAME 
+    branch</a> the Aristotle Library Apps. This research 
+    <a href="http://tuttdemo.coloradocollege.edu/">demo</a> is still running.
+  </p>
   </article>
 </div>
 <div class="row">
@@ -63,8 +78,9 @@
    development of a web application was started in 2011 with the purpose to allow
    Colorado College seniors to self-submit their Thesis and supporting datasets to
    the Library's <a href="#">Digital Repository</a>.
-   
-    <img src="{{ url_for('static', filename='images/ccetd.png') }}" class="img-thumbnail pull-right">
+   <img src="{{ url_for('static', filename='images/ccetd.png') }}" 
+    class="img-thumbnail pull-right">. This approach resulted in a couple of
+    other internal 
    </p>
   </article>
   <article class="col-md-6">
@@ -88,8 +104,6 @@
     <a href="http://catalog.coloradocollege.edu">
       <img src="{{ url_for('static', filename='images/cpp-example.png') }}" class="img-thumbnail pull-left screen-shot">
     </a>
-
-
     <p>
       The first iteration of the <a href="http://catalog.coloradocollege.edu/">TIGER Catalog</a> uses
       Solr and MongoDB for backend storage and search, and Flask for the web-front end. <a href="https://www.mongodb.org/">
@@ -109,7 +123,11 @@
       </section>
       <section class="panel-body">
        <p class="lead">
-               
+        <img src="{{ url_for('static', filename='images/cc-tiger-logo.png') }}"
+          class="img-thumbnail pull-right">
+        Extends <a href="{{ url_for('slide', page='bibcat') }}">BIBCAT</a> by pulling directly from
+        the requirements of Colorado College's People and Institutions for library . 
+                   
        </p>  
       </section> 
   </article>

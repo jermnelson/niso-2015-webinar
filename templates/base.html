@@ -31,27 +31,28 @@
        <p class="lead">This webinar traces the development path taken by the 
         <a href="https://www.coloradocollege.edu/library">Tutt Library</a>
         at <a href="https://www.coloradocollege.edu/">Colorado College</a> as its explores 
-        how <a href="{{ url_for('slide', page='references') }}#bibframe">BIBFRAME</a> and other 
-        <a href="{{ url_for('slide', page='references') }}#schema-org">Linked</a>-<a href="{{ url_for('slide', page='references') }}#modsrdf">data</a>
+        how <a href="http://bibframe.org/">BIBFRAME</a> and other 
+        <a href="http://www.schema.org/">Linked</a>-<a href="http://www.loc.gov/standards/mods/modsrdf/">data</a>
         vocabularies
         can be used in library systems to improve operations and provide superior access
         and discoverability of the library's collections.
        </p>
        <p class="lead">Starting with early experiments 
         modeling bibliographic entities using <a href="https://cloud.google.com/appengine/">Google App Engine</a>
-        &amp; <a href="{{ url_for('slide', page='references') }}#solr">Solr</a>, the library moved to 
-        using <a href="{{ url_for('slide', page='references') }}#redis">Redis</a> as a bibliographic store for 
-        <a href="{{ url_for('slide', page='references') }}#frbr">FRBR</a> and BIBFRAME entities. Limitations with Redis
-        lead to further experimental systems with <a href="{{ url_for('slide', page='references') }}#mongodb">MongoDB</a> 
-        and Solr, leading eventually to using
-        <a href="{{ url_for('slide', page='references') }}#fedora4">Fedora 4</a> as a 
-        <a href="{{ url_for('slide', page='references') }}#linked-data-platform">Linked Data Platform</a>
-        supported by <a href="{{ url_for('slide', page='references') }}#elastic-search">Elastic Search</a>, 
-        <a href="{{ url_for('slide', page='references') }}#fuseki">Apache Fuseki</a>, and Redis that is
+        &amp; <a href="http://lucene.apache.org/solr/">Solr</a>, the library moved to 
+        using <a href="http://redis.io">Redis</a> as a bibliographic store for 
+        <a href=" http://www.ifla.org/publications/functional-requirements-for-bibliographic-records">FRBR</a> and BIBFRAME entities. Limitations with Redis
+        lead to further experimental systems with <a href="https://www.mongodb.org/">MongoDB</a> 
+        and Solr, leading eventually to an exciting opportunity for Linked-Data catalog. This new projects uses
+        <a href="http://fedorarepository.org/">Fedora 4</a> as a 
+        <a href="http://www.w3.org/TR/ldp/">Linked Data Platform</a>
+        supported by <a href="https://www.elastic.co/products/elasticsearch">Elastic Search</a>, 
+        <a href="http://jena.apache.org/documentation/serving_data/">Apache Fuseki</a>, and 
+        <a href="http://redis.io">Redis</a> that is
         being actively developed in the upcoming <a href="http://bibcat.org">BIBCAT</a> - short for BIBFRAME Catalog -
         for the Library of Congress. 
-        The future plans for the Tutt Library is to use the BIBCAT a foundation for a new
-        integrated library catalog and website. 
+        The future plans for the Colorado College's Library is building a new library website and catalog base
+        on BIBCAT and the BIBFRAME Datastore for the library's bibliographic and operational needs.  
       </p>
       <a href="{{ url_for('slide', page='early-experiments') }}" class="pull-right btn btn-lg btn-info">
          Early experiments <i class="glyphicon glyphicon-triangle-right"></i>
@@ -61,6 +62,7 @@
    {% block footer %}
        {% include 'snippets/footer.html' %}
    {% endblock %}
+   {% block dialogs %}{% endblock %}
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
