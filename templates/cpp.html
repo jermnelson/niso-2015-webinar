@@ -110,14 +110,15 @@
     <div class="panel-heading" role="tab" id="headingTwo">
       <h4 class="panel-title">
         <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#elastic-search" aria-expanded="false" aria-controls="elastic-search">
-         Elasticsearch 
-        </a>
+         Elasticsearch         </a>
       </h4>
     </div>
     <div id="elastic-search" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
       <div class="panel-body">
         <img src="{{ url_for('static', filename='images/elastic-search-logo.png') }}" class="img-thumbnail pull-left">
-        Elasticsearch, based on Apache Lucene, is
+        Elasticsearch, based on Apache Lucene, is used for search by 
+        indexing the JSON-LD serialization of the RDF subject graphs stored 
+        in Fedora. 
      </div>
     </div>
   </div>
@@ -131,7 +132,12 @@
     </div>
     <div id="fuseki" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
       <div class="panel-body">
-        Fuseki 
+        Apache Fuseki, a full-featured SPARQL endpoint, enhances the 
+        functionality and utility of Fedora 4 as a Linked Data platform 
+        for such uses in the BIBFRAME Catalog as Resource de-duplication. 
+        Fuseki and Fedora 4 also allow for inference querying and 
+        enhancing the possibilities of sharing linked-data resources with
+        third parties.
      </div>
     </div>
   </div>
